@@ -16,6 +16,7 @@ body
 	font-size: 14px;
 	line-height: 1;
 	margin: 1px;
+	text-align: left;
 }
 
 .necessary
@@ -28,6 +29,8 @@ body
 var
 {
 	text-decoration: underline;
+	text-transform: uppercase;
+	font-style: normal;
 }
 
 .extern
@@ -35,17 +38,44 @@ var
 	color: #87ff00;
 }
 
-h2
+h1
 {
 	color: #d7005f;
 	font-weight: bold;
-	margin-top: 2em;
+	margin-top: 1em;
 	text-transform: uppercase;
 }
 
-p, dl
+h2, h3, h4, h5, h6
+{
+	margin-top: 1em;
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-left: 3em;
+	color: #87ff00;
+}
+
+p, dl, ol, ul
 {
 	margin-left: 5em;
+}
+
+ul
+{
+	list-style: none;
+	padding-left: 0;
+}
+
+ul li:before
+{
+	content: ".";
+	margin-right: 4em
+}
+
+
+p
+{
+	margin-bottom: 1em;
 }
 
 nav

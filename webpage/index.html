@@ -23,64 +23,79 @@
       </div>
     </nav>
     <article>
-    <h2>Name</h2>
+    <h1>Name</h1>
     <p>
     lm - ls for music
     </p>
 
-    <h2>Synopsys</h2>
+    <h1>Synopsys</h1>
     <p>
-    <samp><span class="necessary">lm</span> [ [<span class="necessary">--author</span>] [<span class="necessary">--genre</span>] [<span class="necessary">--album</span>] [<span class="necessary">--track</span>] ]… [<span class="necessary">--header</span>] <var>file</var>…</samp>
+    <samp><span class="necessary">lm</span> [ <span class="necessary">--author</span> | <span class="necessary">--genre</span> | <span class="necessary">--album</span> | <span class="necessary">--track</span> ]… [ <span class="necessary">--header</span> ] <var>file</var>…</samp>
     <p>
 
-    <h2>Description</h2>
+    <h1>Description</h1>
     <p>
-    <span class="necessary">lm</span> is a little program who read multimedia metainformations, such as genre, title, track, album and also artist for a music <var>file</var> and prints it in human-readable way. It’s seen as an a music dedicated ls varient.
+    <span class="necessary">lm</span> is a little program who read multimedia metainformations, such as genre, title, track, album and also artist for a music <var>file</var> and prints it in human-readable way. It’s seen as an a music dedicated  <span class="extern">ls(1)</span> varient.
     </p>
 
     <p>
     The output list always diplay informations in the following order: Title name, Track number, Author name, Album, Genre.
     </p>
 
-    <h2>Options</h2>
+    <ol>
+      <li>test</li>
+    </ol>
+
+    <h1>Sort options</h1>
     <p>
-      <dl>
-        <dt>
-        <samp class="necessary">--author</samp>
-        </dt>
-        <dd>
-        Sort the given files by author.
-        </dd>
+      It is possible to combine the multiple existing sort options but the order you mention it have influence on the sorting. Then if you use <samp class="necessary">--genre</samp> before <samp class="necessary">--author</samp>, you will have the same artist track in differente genre group, if this artist have two tracks of different genre.
+    </p>
+    <dl>
+      <dt>
+      <samp class="necessary">--album</samp>
+      </dt>
+      <dd>
+      Sort the given files by album name.
+      </dd>
 
-        <dt>
-        <samp class="necessary">--genre</samp>
-        </dt>
-        <dd>
-        Sort the given files by genre.
-        </dd>
+      <dt>
+      <samp class="necessary">--author</samp>
+      </dt>
+      <dd>
+      Sort the given files by author.
+      </dd>
 
-        <dt>
-        <samp class="necessary">--track</samp>
-        </dt>
-        <dd>
-        Sort the given files by track number.
-        </dd>
+      <dt>
+      <samp class="necessary">--genre</samp>
+      </dt>
+      <dd>
+      Sort the given files by genre.
+      </dd>
 
-        <dt>
-        <samp class="necessary">--header</samp>
-        </dt>
-        <dd>
-        Display a header on the top of the list remembring the colomn information type.
-        </dd>
-      </dl>
+      <dt>
+      <samp class="necessary">--track</samp>
+      </dt>
+      <dd>
+      Sort the given files by track number.
+      </dd>
+    </dl>
+
+    <h1>Other options</h1>
+    <dl>
+      <dt>
+      <samp class="necessary">--header</samp>
+      </dt>
+      <dd>
+      Display a header on the top of the list remembring the colomn information type.
+      </dd>
+    </dl>
+
+    <h1>See also</h1>
+    <p>
+    <span class="extern">ffprobe(1)</span>, <span class="extern">ls(1)</span>
     </p>
 
-    <h2>See also</h2>
-    <p>
-    <span class="extern">ffprobe(1)</span>
-    </p>
-
-    <h2>Author</h2>
+    <h1>Author</h1>
     <p>
     The mayor part of <span>lm</span> is writen by Fauve (aka Idriss al Idrissi) <a href="http://taniere.info">&lt;http://taniere.info&gt;</a> and could be find in Github at <a href="https://github.com/FauveNoir/lm/">&lt;https://github.com/FauveNoir/lm/&gt;</a>.
     </p>
