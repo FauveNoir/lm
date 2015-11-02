@@ -1,38 +1,40 @@
 .TH lm 1 "2015-11-02"
+.LO 1
 .SH NAME
 lm \- ls for music
 .SH SYNOPSIS
 .B lm
-[ [\fB\-\-author\fR]
-[\fB\-\-genre\fR]
-[\fB\-\-album\fR]
-[\fB\-\-track\fR] ]...
-[\fB\-\-header\fR]
-.IR file...
+.RB [ [ \-\-author ]
+.RB [ \-\-genre ] 
+.RB [ \-\-album ] 
+.RB [ \-\-track ] ]... 
+.RB [ \-\-header ]
+.I "file..."
+
 .SH DESCRIPTION
 .B lm
 is a little program who read multimedia metainformations, such as genre, title, track, album and also artist for a music
-.IR file
+.I file
 and prints it in human-readable way.
 It’s seen as an a music dedicated ls varient.
 .PP
 The output list always diplay informations in the following order: Title name, Track number, Author name, Album, Genre.
 .SH OPTIONS
 .TP
-\fB\-\-author\fR
+.B \-\-author
 Sort the given files by author.
 .TP
-\fB\-\-genre\fR
+.B \-\-genre
 Sort the given files by genre.
 .TP
-\fB\-\-track\fR
+.B \-\-track
 Sort the given files by track number.
 .TP
-\fB\-\-header\fR
+.B \-\-header
 Display a header on the top of the list remembring the colomn information type.
-.SH SEE ALSO
-.BR ffprobe (1)
+.SH "SEE ALSO"
+.BR ffprobe(1)
 .SH AUTHOR
 The mayor part of
-.B lm
+.BR lm
 is writen by Fauve (aka Idriss al Idrissi) <http://taniere.info> and could be find in Github at <https://github.com/FauveNoir/lm/>.

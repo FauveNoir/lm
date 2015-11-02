@@ -1,0 +1,128 @@
+@font-face
+{
+	font-family: "Anonymous Pro";
+	src: url("./AnonymousPro.ttf") format("ttf");
+}
+
+body
+{
+	font-family: "Anonymous Pro", monospace, "Monaco", "Courrier New";
+	color: #d0d0d0;
+	background-color: #121212;
+}
+
+*
+{
+	font-size: 14px;
+	line-height: 1;
+	margin: 1px;
+}
+
+.necessary
+{
+	font-weight: bold;
+	color: #af5fff;
+	font-weight: bold;
+}
+
+var
+{
+	text-decoration: underline;
+}
+
+.extern
+{
+	color: #87ff00;
+}
+
+h2
+{
+	color: #d7005f;
+	font-weight: bold;
+	margin-top: 2em;
+	text-transform: uppercase;
+}
+
+p, dl
+{
+	margin-left: 5em;
+}
+
+nav
+{
+	color: #d75f00;
+	margin-bottom: 4em;
+}
+
+a[href]
+{
+	color: #007EDF;
+	text-decoration: none;
+	transition: text-shadow 0.5s ease 0s;
+}
+
+a[href]:hover
+{
+	color: #0069BA;
+	text-shadow: 0px 0px 2px #0090FF;
+}
+
+dd
+{
+	margin-left: 4em;
+}
+
+nav > div
+{
+	position: absolute;
+	display: inline;
+}
+
+nav > div:first-of-type
+{
+	top: 0px;
+	left: 0px;
+	text-align: left;
+}
+
+nav > div:last-of-type
+{
+	top: 0px;
+	right: 0px;
+	text-align: right;
+}
+
+nav > div:nth-of-type(2)
+{
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	text-align: center;
+}
+
+footer
+{
+	margin-top: 3em;
+	text-align: center;
+}
+
+footer > div
+{
+	display: inline-block;
+	width: 32%;
+}
+
+footer > div:first-of-type
+{
+	text-align: left;
+}
+
+footer > div:last-of-type
+{
+	text-align: right;
+}
+
+footer > div:nth-of-type(2)
+{
+	text-align: center;
+}
